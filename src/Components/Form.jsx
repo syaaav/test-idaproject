@@ -1,4 +1,5 @@
 import CircleApp from "../circle.svg";
+import handleSubmit from "../Functions/Submit.js";
 import "./Form.scss";
 
 function Form() {
@@ -15,6 +16,7 @@ function Form() {
           </label>
           <input
             type="text"
+            id="title"
             placeholder="Введите наименование товара"
             className="input"
             required
@@ -25,6 +27,7 @@ function Form() {
           <textarea
             cols="34"
             rows="3"
+            id="def"
             placeholder="Введите описание товара"
             className="textarea"
           />
@@ -38,6 +41,7 @@ function Form() {
           </label>
           <input
             type="url"
+            id="link"
             placeholder="Введите ссылку"
             className="input"
             required
@@ -52,12 +56,17 @@ function Form() {
           </label>
           <input
             type="number"
+            id="price"
             placeholder="Введите цену"
             className="input"
             required
           />
         </div>
-        <button type="submit" className="button">
+        <button
+          type="button"
+          className="button"
+          onClick={() => handleSubmit("title", "def", "price")}
+        >
           Добавить товар
         </button>
       </form>

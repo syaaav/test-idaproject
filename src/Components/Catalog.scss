@@ -32,10 +32,16 @@ select {
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: nowrap;
+  position: relative;
   @include shadowForm();
   &:hover {
     transition: transform 0.7s;
     transform: scale(1.02);
+  }
+  &:hover .delete {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
   }
 }
 .card_title {
@@ -55,4 +61,16 @@ select {
   text-align: left;
   color: $color-text;
   font-weight: 600;
+}
+
+.delete {
+  background: transparent;
+  background-image: url(../delete.png);
+  background-repeat: no-repeat;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0ms, opacity 300ms;
+  position: absolute;
+  top: -8px;
+  right: -8px;
 }

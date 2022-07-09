@@ -1,4 +1,3 @@
-import CardItem from "../Components/CardItem.jsx";
 import "./Catalog.scss";
 
 function Catalog() {
@@ -16,13 +15,7 @@ function Catalog() {
           </select>
         </div>
       </form>
-      <div className="catalog_cards">
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-      </div>
+      <div className="catalog_cards"></div>
     </div>
   );
 }
