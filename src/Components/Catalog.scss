@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.catalog {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+select {
+  outline: none;
+  @include input();
+  height: 36px;
+  appearance: none;
+  background: url(../arrow.svg) no-repeat center;
+  background-position: 80%;
+  color: $color-input_placeholder;
+}
+
+.catalog_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.card {
+  width: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  @include shadowForm();
+  &:hover {
+    transition: transform 0.7s;
+    transform: scale(1.02);
+  }
+  &:hover .delete {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+  }
+}
+.card_title {
+  margin: 16px 0px 16px 16px;
+  color: $color-text;
+  font-weight: 600;
+}
+.card_def {
+  margin-left: 16px;
+  text-align: left;
+  color: $color-text;
+  font-size: 16px;
+  font-weight: 400;
+}
+.card_price {
+  margin: 32px 0 24px 16px;
+  text-align: left;
+  color: $color-text;
+  font-weight: 600;
+}
+
+.delete {
+  background: transparent;
+  background-image: url(../delete.png);
+  background-repeat: no-repeat;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0ms, opacity 300ms;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
