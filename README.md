@@ -1,25 +1,67 @@
-# Product list output page
+#### _English version_
 
-This page contains a form with validation, in which you need to enter data about the product. This product is then displayed on the screen. Thus, the possibility of adding products to the list is implemented.
+<h1 align="center">The page for displaying products</h1>
+<h2 align="center">
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/made%20by-syaaav-ff69b4" >
+
+<img src="https://img.shields.io/badge/open%20source-❤%EF%B8%8F-lightgrey">
+
+</p>
+
+## Description
+
+<p align="center"><img src="src/ida.gif" width="80%"></p>
+
+The page for displaying a list of products with the ability to add products to the showcase by filling out a form.
 
 ## Available Scripts
 
-The version of node that was developed on - v17.4.0
-
-In the project directory, you can run:
-
-### `npm start`
+```
+npm install
+npm run start
+```
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+<br>
+<br>
 
-### `npm run build`
+#### _Русская версия_
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h1 align="center">Страница для отображения товаров</h1>
+<h2 align="center">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+
+<img src="https://img.shields.io/badge/made%20by-syaaav-ff69b4" >
+
+<img src="https://img.shields.io/badge/open%20source-❤%EF%B8%8F-lightgrey">
+
+</p>
+
+## Описание
+
+<p align="center"><img src="src/ida.gif" width="80%"></p>
+
+Страница вывода списка товаров с возможностью добавления товаров на витрину через заполнение формы.
+
+## Как запустить
+
+```
+npm install
+npm run start
+```
+
+Запускает приложение в режиме разработки.\
+Откройте [http://localhost:8080](http://localhost:8080), чтобы просмотреть его в браузере.
+
+Страница перезагрузится, если вы внесете изменения.\
+Вы также увидите любые ошибки lint в консоли.
+<br>
+<br>
